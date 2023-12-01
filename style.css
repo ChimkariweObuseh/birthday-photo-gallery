@@ -10,9 +10,6 @@ body{
   align-items: center;
   min-height: 100vh;
   background-image: url("IMG_5199.png");
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-
 }
 
 .container{
