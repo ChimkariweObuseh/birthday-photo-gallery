@@ -31,8 +31,7 @@
 			  animationEffect: "zoom",
 			  transitionEffect: "zoom-in-out"
 		  });
-
-		  const container = document.querySelector('container');
+		  
 		  let caption = '';
 
 
@@ -88,7 +87,7 @@
 		  }
 
 
-			  container.innerHTML += `<span style="--i:${i - 5221}">
+			  document.querySelector('container').innerHTML += `<span style="--i:${i - 5221}">
 			<a href="${i}.jpeg" data-fancybox="gallery" data-caption="${caption}">
                 <img src="${i}.jpeg"/>
             </a>
