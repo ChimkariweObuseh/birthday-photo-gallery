@@ -12,7 +12,7 @@ body{
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-image: linear-gradient(to bottom right, black, gold);
+  background: linear-gradient(to bottom right, black, gold);
 }
 
 .container{
