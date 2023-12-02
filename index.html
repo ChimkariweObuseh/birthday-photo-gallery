@@ -151,6 +151,50 @@
 			  animationEffect: "zoom",
 			  transitionEffect: "zoom-in-out"
 		  });
+		  // Array of background images
+var images = [
+IMG_5222.jpeg,
+IMG_5223.jpeg,
+IMG_5224.jpeg,
+IMG_5225.jpeg,
+IMG_5226.jpeg,
+IMG_5227.jpeg,
+IMG_5228.jpeg,
+IMG_5229.jpeg,
+IMG_5230.jpeg,
+IMG_5231.jpeg,
+IMG_5232.jpeg,
+IMG_5233.jpeg,
+IMG_5234.jpeg,
+IMG_5235.jpeg,
+IMG_5236.jpeg,
+IMG_5237.jpeg,
+IMG_5238.jpeg,
+IMG_5239.jpeg,
+IMG_5240.jpeg,
+IMG_5241.jpeg,
+IMG_5242.jpeg,
+IMG_5243.jpeg,
+IMG_5244.jpeg,
+IMG_5245.jpeg
+	];
+
+// Function to change the background image
+function changeBackgroundImage() {
+  // Get a random image from the array
+  var randomIndex = Math.floor(Math.random() * images.length);
+  var randomImage = images[randomIndex];
+
+  // Set the background image, brightness, and blur
+  document.body.style.backgroundImage = "url('" + randomImage + "')";
+  document.body.style.filter = "brightness(50%) blur(8px)";
+}
+
+// Initial call to change the background image
+changeBackgroundImage();
+
+// Set interval to change the background image every 5 seconds
+setInterval(changeBackgroundImage, 5000);
 	  </script>
   </body>
 </html>
