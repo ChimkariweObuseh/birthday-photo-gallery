@@ -12,21 +12,7 @@ body{
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-}
-
-.image {
-  /* Add background img */
-  background-image: url("IMG_5222.jpeg");
-
-  /* Use filter to add blur effect */
-  filter: blur(6px);
-  
-  height: 100%;
-
-  /* Center the image */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: linear-gradient(to bottom right, black, gold);
 }
 
 .container{
