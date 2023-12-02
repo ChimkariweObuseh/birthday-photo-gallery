@@ -37,7 +37,7 @@
 
 
 
-		  for (let i = 1; i <= 23; i++) {
+		  for (let i = 5222; i <= 5245; i++) {
 
 		  if (i === 1) {
 			  caption = '';
@@ -88,9 +88,9 @@
 		  }
 
 
-			  container.innerHTML += `<span style="--i:${i}">
-			<a href="${i}.jpg" data-fancybox="gallery" data-caption="${caption}">
-                <img src="${i}.jpg"/>
+			  container.innerHTML += `<span style="--i:${i - 5221}">
+			<a href="${i}.jpeg" data-fancybox="gallery" data-caption="${caption}">
+                <img src="${i}.jpeg"/>
             </a>
 		</span>`
 		  }
