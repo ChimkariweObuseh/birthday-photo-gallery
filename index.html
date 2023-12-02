@@ -15,33 +15,7 @@
     <script src="jquery.fancybox.min.js"></script>
   </head>
   <body>
-	<div class="container">
-	    <span style="--i:1">
-			<a href="IMG_5067.jpeg" data-fancybox="gallery" data-caption="Single image">
-                <img src="IMG_5067.jpeg" />
-            </a>
-		</span>
-		<span style="--i:2">
-			<a href="IMG_5183.jpeg" data-fancybox="gallery" data-caption="Single image">
-                <img src="IMG_5183.jpeg" />
-            </a>
-		</span>
-		<span style="--i:3">
-			<a href="IMG_5215.jpeg" data-fancybox="gallery" data-caption="Single image">
-                <img src="IMG_5215.jpeg" />
-            </a>
-		</span>
-		<span style="--i:4">
-			<a href="IMG_5218.jpeg" data-fancybox="gallery" data-caption="Single image">
-                <img src="IMG_5218.jpeg"/>
-            </a>
-		</span>
-		<span style="--i:5">
-			<a href="IMG_5199.png" data-fancybox="gallery" data-caption="Single image">
-                <img src="IMG_5199.png" />
-            </a>
-		</span>
-	</div>
+	<div class="container"></div>
 
 	  <script>
 		  $('[data-fancybox]').fancybox({
@@ -57,6 +31,69 @@
 			  animationEffect: "zoom",
 			  transitionEffect: "zoom-in-out"
 		  });
+
+		  const container = document.querySelector('container');
+		  let caption = '';
+
+
+
+		  for (let i = 1; i <= 23; i++) {
+
+		  if (i === 1) {
+			  caption = '';
+		  } else if (i === 2) {
+			  caption = '';
+		  } else if (i === 3) {
+			  caption = '';
+		  } else if (i === 4) {
+			  caption = '';
+		  } else if (i === 5) {
+			  caption = '';
+		  } else if (i === 6) {
+			  caption = '';
+		  } else if (i === 7) {
+			  caption = '';
+		  } else if (i === 8) {
+			  caption = '';
+		  } else if (i === 9) {
+			  caption = '';
+		  } else if (i === 10) {
+			  caption = '';
+		  } else if (i === 11) {
+			  caption = '';
+		  } else if (i === 12) {
+			  caption = '';
+		  } else if (i === 13) {
+			  caption = '';
+		  } else if (i === 14) {
+			  caption = '';
+		  } else if (i === 15) {
+			  caption = '';
+		  } else if (i === 16) {
+			  caption = '';
+		  } else if (i === 17) {
+			  caption = '';
+		  } else if (i === 18) {
+			  caption = '';
+		  } else if (i === 19) {
+			  caption = '';
+		  } else if (i === 20) {
+			  caption = '';
+		  } else if (i === 21) {
+			  caption = '';
+		  } else if (i === 22) {
+			  caption = '';
+		  } else if (i === 23) {
+			  caption = '';
+		  }
+
+
+			  container.innerHTML += `<span style="--i:${i}">
+			<a href="${i}.jpg" data-fancybox="gallery" data-caption="${caption}">
+                <img src="${i}.jpg"/>
+            </a>
+		</span>`
+		  }
 	  </script>
   </body>
 </html>
